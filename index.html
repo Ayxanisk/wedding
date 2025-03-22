@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruslan & Lala</title>
+    <style>
+        @font-face {
+            font-family: "Agdasima";
+            src: url('../project/fonts/Agdasima/Agdasima-Bold.ttf') format('truetype'),
+            url('../project/fonts/Agdasima/Agdasima-Bold.ttf') format('truetype');
+        }
+
+        body {
+            font-family: Agdasima , sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #fbeff3, #f8d7e3);
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3rem;
+            color: #d6336c;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 5px solid deeppink;
+        }
+        .video-container video, .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .video-container-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="video-container-2">
+        <h1>Ruslan & Lala</h1>
+        <img  width="90" height="90" src="wedding-rings_7626777.png" alt="Ruslan & Lala">
+    </div>
+    <div class="video-container">
+        <iframe width="640" height="360" src="https://drive.google.com/file/d/1pS-f7WdpkkfwqlqKeLaPsNdfNhH4DYCv/view?usp=sharing" allow="autoplay"></iframe>
+    </div>
+</div>
+</body>
+</html>
