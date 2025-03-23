@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruslan & Lala</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         @font-face {
             font-family: "Agdasima";
@@ -15,7 +16,7 @@
             font-family: Agdasima , sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #fbeff3, #f8d7e3);
+            background: pink;
             text-align: center;
         }
         .container {
@@ -66,14 +67,42 @@
     </style>
 </head>
 <body>
+<header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                     fill="#e8eaed">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </a></li>
+            <li><a href="index.html" class="active" data-page="home">Video</a></li>
+            <li><a href="images.html" class="nav-link" data-page="about">Images</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html" class="active" data-page="home">Video</a></li>
+            <li class="hideOnMobile"><a href="images.html" class="nav-link" data-page="about">Images</a></li>
+            <li class="menuButton" onclick=showSidebar()><a href="#" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                     fill="#e8eaed">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </a></li>
+        </ul>
+    </nav>
+</header>
 <div class="container">
     <div class="video-container-2">
-        <h1>Ruslan & Lala</h1>
-            <img id="image" width="90" height="90" src="wedding-rings_7626777.png" alt="Ruslan & Lala">
-        </div>
-        <div class="video-container">
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/NqkorbYt7Ag" title="Ruslan&Lala" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+    <h1>Ruslan & Lala</h1>
+        <img id="image" width="90" height="90" src="wedding-rings_7626777.png" alt="Ruslan & Lala">
+    </div>
+    <div class="video-container">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/NqkorbYt7Ag" title="Ruslan&Lala" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 </div>
+<footer>
+    <p>&copy; Ruslan & Lala 2025 made by Ayxan</p>
+</footer>
+<script defer src="index.js"></script>
 </body>
 </html>
